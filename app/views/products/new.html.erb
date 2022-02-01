@@ -1,9 +1,5 @@
-<h1>New product</h1>
 
-<%= render "form", product: @product %>
+<%= render 'application/remote_modal', title: 'new Product' do %>
+  <%= render "form", product: @product %>
+<% end %>
 
-<br>
-
-<div>
-  <%= link_to "Back to products", products_path %>
-</div>

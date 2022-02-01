@@ -8,5 +8,8 @@
     <strong>Description:</strong>
     <%= product.description %>
   </p>
-
+  <div>
+    <%= link_to "Edit this product", edit_product_path(product), class: "me-2 btn btn-sm btn-outline-primary", data: { turbo_frame: "remote_modal" } %> |
+    <%= button_to "Delete", product, method: :delete, class: "btn btn-sm btn-outline-danger", form: { data: { turbo_confirm: "Are you sure?" } } %>
+  </div>
 </div>
