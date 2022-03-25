@@ -29,3 +29,8 @@
   justify-content: space-between;
   align-items: center;
 }
+
+#calendar {
+      max-width: 1100px;
+      margin: 40px auto;
+    }

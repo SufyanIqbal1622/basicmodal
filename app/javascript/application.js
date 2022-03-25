@@ -2,8 +2,7 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "Jquery"
-
-
+  
 $('#products').on('DOMSubtreeModified', function(e){
   $('.modal').modal('hide');
 });
