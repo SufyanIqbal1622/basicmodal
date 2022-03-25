@@ -5,6 +5,8 @@ export default class extends Controller {
   connect() {
     this.modal = new Modal(this.element)
     this.modal.show()
+    console.log("conected")
+
   }
 
   hideBeforeRender(event) {
